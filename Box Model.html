@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model HTML</title>
+        <style>
+            div {
+                display: flexbox;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .container {
+                display: flex;
+                justify-content: space-around;
+                gap: 20px;
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+
+            .box {
+                width: 300px;
+                height: 200px;
+                border: 2px solid black;
+                padding: 10px;
+                overflow: auto;
+                /* Enables scroll if content exceeds */
+                background-color: #f0f0f0;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+
+            input {
+                width: auto;
+                padding: 10px;
+                border: 3px;
+                border-radius: 15;
+                border-color: violet;
+                text-decoration-color: blue;
+
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Box Contents Example</h1>
+        <br>
+        <div class="container">
+            <!-- First Box -->
+            <div class="box">
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+                <p>This is an example content with an image and scrollable text if needed.</p>
+            </div>
+
+            <!-- Second Box -->
+            <div class="box">
+                <p>This is another example box with some extra text to demonstrate overflow behavior in CSS Box Model.
+                    The text can extend beyond the box, creating a scroll effect.</p>
+                <p>More text to add scroll effect... <input> </input> </p>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
